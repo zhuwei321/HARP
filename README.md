@@ -1,7 +1,7 @@
 # **HARP: Retrieval-Augmented Temporal Popularity Prediction forSocial Media Content** 
 
-<img src="https://github.com/zhuwei321/HARP/blob/main/images/model.jpg" style="zoom: 15%;" />
-<img src="https://github.com/zhuwei321/HARP/blob/main/images/model2.jpg" style="zoom: 15%;" />
+<img src="https://github.com/zhuwei321/HARP/blob/main/images/model.png" style="zoom: 15%;" />
+<img src="https://github.com/zhuwei321/HARP/blob/main/images/model2.png" style="zoom: 15%;" />
 
 ## About
 
