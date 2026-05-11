@@ -19,7 +19,7 @@ Paper link: https://arxiv.org/abs/2503.04446
 1. Use git command to pull the project code:
 
    ```
-   gh repo clone zhuwei321/SMTPD
+   gh repo clone zhuwei321/HARP
    ```
 
 2. Download the dataset called basic_view_pn.csv and the video cover image compression package called img_yt.zip, unzip them and save them in the data_source folder.
