@@ -4,15 +4,13 @@
 
 ## About
 
-​     Targeting to fix up the above shortcomings of existed datasets, we propose a new benchmark called Social Media Temporal Popularity Dataset (**SMTPD**) by observing multi-modal content from mainstream for cutting-edge research in the field of social multimedia along with multi-modal feature temporal prediction. 
-Multi-modal contents of social media posts in multiple languages generated the daily popularity information during the communication process. We define such a post as a sample of SMTPD, and
-propose a multi-modal framework as a baseline to achieve the temporal prediction of popularity scores. The proposed framework consists of two parts, feature extraction and regression. In the feature extraction part, multiple pre-training models and pre-processing methods are introduced to translate the multi-modal content into deep features. In the regression part, we encode the state and time sequence of the extracted features, and adopt the LSTM-based structure to regress the 30-day popularities. Through analysis and experiments, we discover the importance of early popularity to the task of popularity prediction, and demonstrate the effectiveness of our method in temporal prediction. Generally, the contribution of this work can be summarized as:
-
--  Against the missing of temporal information in social media popularity researches, we observe over 282K multilingual samples from mainstream social media since they released on the network lasting for 30 days. We refer to these samples as SMTPD, a new benchmark for temporal popularity prediction.
-- item Basing on existed methods, we innovate in both the selection of feature extractors and the construction of the temporal regression component, and suggest a baseline model which enables temporal popularity prediction to be conducted across multiple languages while aligning prediction times.
-- Exploring the popularity distribution and the correlation between popularity at different times. Based on these, We find the importance of early popularity for popularity prediction task, and point out that the key-point for predicting popularity is to accurately predict the early popularity.
-
-Paper link: https://arxiv.org/abs/2503.04446
+​Predicting the popularity of social media content is crucial for applications such as personalized recommendation and viral trend analysis.
+However, existing datasets and methods often rely on isolated popularity scores or target-side multimodal cues, making it difficult to evaluate temporally aligned popularity evolution and to transfer propagation patterns from related historical content. 
+To address these challenges, we build upon the Social Media Temporal Popularity Prediction Dataset~(SMTPD), a multilingual multimodal benchmark with 30-day aligned popularity trajectories, and propose HARP~(Hybrid Aggregation for Recurrent Popularity Modeling). 
+HARP first estimates a target-conditioned preliminary popularity trajectory from publication-time cues and then uses it as a popularity-aware query for hybrid retrieval.
+Specifically, a graph-guided multimodal hybrid retrieval aggregation module selects top-$k$ historical references by combining trajectory similarity with hypergraph-based semantic structure, and aggregates visual, textual, frequency-domain, and early-popularity features as neighborhood priors. 
+These retrieval-enhanced representations are further integrated for temporally aligned popularity forecasting.
+Experimental results on SMTPD show that HARP consistently outperforms representative baselines, demonstrating the effectiveness of popularity-aware retrieval and multimodal neighborhood aggregation for social media popularity prediction.
 
 ## How to use？
 
